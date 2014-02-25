@@ -773,10 +773,10 @@ Thrift.Protocol.prototype = {
         return this.readString();
     },
 
-
     //Method to arbitrarily skip over data.
     skip: function(type) {
-        throw 'skip not supported yet';
+        // comment this out so our thrift is backwards compatible
+        //throw 'skip not supported yet';
     }
 };
 })(window);
